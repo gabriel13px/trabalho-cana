@@ -1,0 +1,159 @@
+CASOS DE TESTE — DIVISÃO E CONQUISTA
+=====================================
+
+Estes são os casos que usamos para conferir as duas implementações de cada
+problema. A ideia foi cobrir tanto situações do dia a dia quanto os casos que
+costumam quebrar a lógica: empates, valores negativos, divisão no meio e
+entradas inválidas. Os índices começam em zero.
+
+Quando há empate, qualquer intervalo ou par válido com a menor soma/distância
+é aceito, porque mais de uma resposta pode estar correta.
+
+Sobre entradas inválidas: o código atual não lança exceção. Na Etapa 1, o vetor
+vazio devolve (0, -1, -1); na Etapa 2, menos de dois pontos devolve
+(inf, None, None). O valor None gera TypeError nas duas etapas.
+
+
+ETAPA 1 — SUBARRANJO DE SOMA MÁXIMA
+-----------------------------------
+
+Caso 1 — vetor comum
+  Entrada: [-2, 3, -1, 5, -4]
+  Saída esperada (soma, início, fim): (7, 1, 3)
+  Justificativa: é o caso mais parecido com o problema real: tem ganhos e
+  perdas, e o melhor intervalo fica no meio, sem pegar as pontas do vetor.
+
+Caso 2 — apenas negativos
+  Entrada: [-5, -2, -8]
+  Saída esperada: (-2, 1, 1)
+  Justificativa: se todos os dias dão prejuízo, a melhor escolha é o dia menos
+  ruim. Por isso a resposta é um único elemento, e não zero.
+
+Caso 3 — um elemento positivo
+  Entrada: [7]
+  Saída esperada: (7, 0, 0)
+  Justificativa: menor entrada possível com lucro; serve para conferir se o
+  algoritmo lida com um vetor de um único dia.
+
+Caso 4 — um elemento negativo
+  Entrada: [-7]
+  Saída esperada: (-7, 0, 0)
+  Justificativa: mesma ideia do caso anterior, mas com prejuízo. A resposta
+  deve ser o próprio valor, não zero.
+
+Caso 5 — todos positivos
+  Entrada: [1, 2, 3]
+  Saída esperada: (6, 0, 2)
+  Justificativa: quando não há perdas, o melhor é somar o vetor inteiro.
+
+Caso 6 — todos zeros
+  Entrada: [0, 0, 0]
+  Saída esperada: (0, 0, 0)
+  Justificativa: todos os intervalos têm a mesma soma, então o teste fixa o
+  primeiro como resposta e aceita os demais.
+
+Caso 7 — empate entre intervalos
+  Entrada: [2, -2, 2]
+  Saída esperada: (2, 0, 0)
+  Justificativa: existem dois intervalos com a mesma soma, um em cada ponta.
+  O teste aceita qualquer um, desde que a soma esteja certa.
+
+Caso 8 — intervalo cruza o meio
+  Entrada: [-3, 4, -1, 5, -2]
+  Saída esperada: (8, 1, 3)
+  Justificativa: o melhor intervalo não fica inteiro em nenhuma metade; ele
+  começa antes da divisão e termina depois. É o caso que obriga a calcular o
+  cruzamento.
+
+Caso 9 — soma maior que int
+  Entrada: [2147483647, 2147483647]
+  Saída esperada: (4294967294, 0, 1)
+  Justificativa: a soma passa do limite de um inteiro de 32 bits. Em Python
+  isso não é problema, mas o caso serve para mostrar que o resultado não
+  estoura.
+
+Caso 10 — vetor vazio
+  Entrada: []
+  Saída esperada: (0, -1, -1)
+  Justificativa: define o que acontece quando não há nenhum dia para analisar.
+
+Caso 11 — vetor nulo
+  Entrada: None
+  Saída esperada: TypeError
+  Justificativa: protege contra uma entrada que nem sequer é uma sequência.
+
+
+ETAPA 2 — PAR DE PONTOS MAIS PRÓXIMOS
+-------------------------------------
+
+Caso 1 — dois pontos
+  Entrada: [(0, 0), (3, 4)]
+  Saída esperada: distância 5
+  Justificativa: menor entrada possível; só existe um par para comparar.
+
+Caso 2 — três pontos
+  Entrada: [(0, 0), (3, 4), (1, 1)]
+  Saída esperada: distância sqrt(2) ≈ 1.414213562
+  Justificativa: o par mais próximo não envolve os pontos das pontas, então o
+  algoritmo precisa olhar para dentro do conjunto.
+
+Caso 3 — pontos repetidos
+  Entrada: [(5, 5), (1, 2), (5, 5)]
+  Saída esperada: distância 0
+  Justificativa: há duas estações na mesma posição; a menor distância possível
+  é zero.
+
+Caso 4 — pontos alinhados
+  Entrada: [(0, 0), (0, 4), (0, 5), (0, 12)]
+  Saída esperada: distância 1
+  Justificativa: todos os pontos estão na mesma vertical. A resposta depende
+  só da diferença entre as coordenadas y.
+
+Caso 5 — coordenadas negativas
+  Entrada: [(-5, -5), (-4, -4), (8, 9)]
+  Saída esperada: distância sqrt(2) ≈ 1.414213562
+  Justificativa: confere que coordenadas negativas são tratadas normalmente,
+  sem inverter sinais no cálculo.
+
+Caso 6 — par cruza a divisão
+  Entrada: [(-8, 20), (-3, 0), (2, 30), (3, 0), (9, 20), (15, 15)]
+  Saída esperada: distância 6
+  Justificativa: o par mais próximo tem um ponto de cada lado da linha de
+  divisão. Se a faixa central fosse ignorada, a resposta sairia errada.
+
+Caso 7 — coordenadas grandes
+  Entrada: [(-2147483648, 0), (2147483647, 0)]
+  Saída esperada: distância 4294967295
+  Justificativa: usa valores extremos para verificar se a distância é
+  calculada sem erro de arredondamento grosseiro.
+
+Caso 8 — um único ponto
+  Entrada: [(1, 2)]
+  Saída esperada: (inf, None, None)
+  Justificativa: com uma estação só não existe par; o código devolve o valor
+  neutro.
+
+Caso 9 — nulo
+  Entrada: None
+  Saída esperada: TypeError
+  Justificativa: uma entrada nula não forma um conjunto de pontos válido.
+
+Mais uma observação: quando dois pares empatam na menor distância, o teste
+aceita qualquer um deles, desde que a distância informada seja realmente a do
+par devolvido.
+
+
+TESTES ALEATÓRIOS REPRODUZÍVEIS
+-------------------------------
+
+- 50 conjuntos de 2 a 80 pontos com coordenadas de -1000 a 1000, comparando a
+  distância da força bruta com a da divisão e conquista.
+- Semente fixa: 2026, para que todo mundo obtenha os mesmos casos.
+- Implementado em test_etapa2.py.
+
+
+COMO EXECUTAR
+-------------
+
+  python test_etapa1.py
+  python test_etapa2.py
