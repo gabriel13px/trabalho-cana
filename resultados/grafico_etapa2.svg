@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-label="Etapa 2 - Par de Pontos Mais Proximos">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="480.0" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">Etapa 2 - Par de Pontos Mais Proximos</text>
+<rect x="100" y="65" width="820" height="415" fill="#f7f9fc" stroke="#d9dee7"/>
+<line x1="100" y1="480.00" x2="920" y2="480.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88" y="484.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333333">0</text>
+<line x1="100" y1="397.00" x2="920" y2="397.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88" y="401.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333333">1.11</text>
+<line x1="100" y1="314.00" x2="920" y2="314.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88" y="318.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333333">2.23</text>
+<line x1="100" y1="231.00" x2="920" y2="231.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88" y="235.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333333">3.34</text>
+<line x1="100" y1="148.00" x2="920" y2="148.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88" y="152.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333333">4.46</text>
+<line x1="100" y1="65.00" x2="920" y2="65.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88" y="69.00" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#333333">5.57</text>
+<line x1="137.27" y1="65" x2="137.27" y2="480" stroke="#d9dee7" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="137.27" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">100</text>
+<line x1="149.11" y1="65" x2="149.11" y2="480" stroke="#d9dee7" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="149.11" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">200</text>
+<line x1="172.77" y1="65" x2="172.77" y2="480" stroke="#d9dee7" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="172.77" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">400</text>
+<line x1="220.10" y1="65" x2="220.10" y2="480" stroke="#d9dee7" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="220.10" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">800</text>
+<line x1="314.76" y1="65" x2="314.76" y2="480" stroke="#d9dee7" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="314.76" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">1600</text>
+<line x1="504.08" y1="65" x2="504.08" y2="480" stroke="#d9dee7" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="504.08" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">3200</text>
+<line x1="882.73" y1="65" x2="882.73" y2="480" stroke="#d9dee7" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="882.73" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">6400</text>
+<line x1="100" y1="480" x2="920" y2="480" stroke="#333333" stroke-width="1.5"/>
+<line x1="100" y1="65" x2="100" y2="480" stroke="#333333" stroke-width="1.5"/>
+<text x="510.0" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333333">Tamanho da entrada (N)</text>
+<text x="28" y="272.5" text-anchor="middle" transform="rotate(-90 28 272.5)" font-family="Arial, sans-serif" font-size="14" fill="#333333">Tempo medio (s)</text>
+<polyline points="137.27,479.91 149.11,479.58 172.77,477.89 220.10,471.86 314.76,445.78 504.08,368.92 882.73,95.74" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+<circle cx="137.27" cy="479.91" r="4.5" fill="#c0392b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="149.11" cy="479.58" r="4.5" fill="#c0392b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="172.77" cy="477.89" r="4.5" fill="#c0392b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="220.10" cy="471.86" r="4.5" fill="#c0392b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="314.76" cy="445.78" r="4.5" fill="#c0392b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="504.08" cy="368.92" r="4.5" fill="#c0392b" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="882.73" cy="95.74" r="4.5" fill="#c0392b" stroke="#ffffff" stroke-width="1.2"/>
+<polyline points="137.27,479.97 149.11,479.89 172.77,479.71 220.10,479.42 314.76,478.62 504.08,477.48 882.73,475.70" fill="none" stroke="#1f4e79" stroke-width="2.5"/>
+<circle cx="137.27" cy="479.97" r="4.5" fill="#1f4e79" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="149.11" cy="479.89" r="4.5" fill="#1f4e79" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="172.77" cy="479.71" r="4.5" fill="#1f4e79" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="220.10" cy="479.42" r="4.5" fill="#1f4e79" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="314.76" cy="478.62" r="4.5" fill="#1f4e79" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="504.08" cy="477.48" r="4.5" fill="#1f4e79" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="882.73" cy="475.70" r="4.5" fill="#1f4e79" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="670" y1="88" x2="700" y2="88" stroke="#c0392b" stroke-width="3"/>
+<circle cx="685" cy="88" r="4" fill="#c0392b"/>
+<text x="708" y="92" font-family="Arial, sans-serif" font-size="12" fill="#333333">Forca bruta</text>
+<line x1="670" y1="112" x2="700" y2="112" stroke="#1f4e79" stroke-width="3"/>
+<circle cx="685" cy="112" r="4" fill="#1f4e79"/>
+<text x="708" y="116" font-family="Arial, sans-serif" font-size="12" fill="#333333">Divisao e conquista</text>
+</svg>

@@ -1,0 +1,11 @@
+CONFIGURACAO DA MAQUINA UTILIZADA
+========================================
+Sistema operacional: Windows
+Versao: 11
+Plataforma: Windows-11-10.0.26300-SP0
+Maquina: AMD64
+Processador: Intel64 Family 6 Model 186 Stepping 2, GenuineIntel
+Nucleos logicos: 12
+Memoria RAM: 23.7 GB
+Python: CPython 3.12.10
+Data/hora da medicao: 03/11/2026 18:40:00
